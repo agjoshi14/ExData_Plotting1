@@ -8,7 +8,7 @@ filter <- as.Date(c("2007-02-01", "2007-02-02"), "%Y-%m-%d")
 
 data <- subset(data, Date %in% filter)
 
-write.table(data, file = "MyData.csv",row.names=FALSE, na="",col.names=TRUE, sep=",") 
+#write.table(data, file = "MyData.csv",row.names=FALSE, na="",col.names=TRUE, sep=",") 
 
 data$Global_active_power<-as.numeric(data$Global_active_power)
 
